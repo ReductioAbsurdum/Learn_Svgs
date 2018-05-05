@@ -1,0 +1,32 @@
+Path Element: Most important element in SVGs
+
+d=""
+  - attribute that defines the shape of a path
+
+
+Commands:
+(upper case means absolute coordinates, lower case are for relative coordinates)
+absolute: from 0,0
+relative: from the last point location
+
+M : move to
+  -move to location
+L : Line to
+  -draws line to location
+H : Line to horizontally
+  - only argument is x
+V : Line to Vertically
+  - only argument is y
+Z : Close path
+  - closes path from last ending point to beginning point
+
+
+Curves:
+Infinite number of Bezier curves, but only two available in paths:
+
+Quadratic (Q) and Cubic (C)
+
+C: takes three points (x1, y1) (x2, y2), (x3, y3)
+  -first point is control point for start of curve
+  -second is control point for end of curve
+  -third is where you want your line to end
