@@ -25,8 +25,27 @@ Curves:
 Infinite number of Bezier curves, but only two available in paths:
 
 Quadratic (Q) and Cubic (C)
+(basically one control point to bend the path vs. two control points)
 
 C: takes three points (x1, y1) (x2, y2), (x3, y3)
   -first point is control point for start of curve
   -second is control point for end of curve
   -third is where you want your line to end
+
+S: takes two points, used to string together several bezier cubic curves
+
+Q: takes two points, first is the control point and the last is the end point (simpler than cubic curves)
+  -basically uses one control point to create curve rather than 2
+
+T: takes two points, used to string together several bezier Quadratic curves
+
+
+
+Arcs:
+A command
+  - takes 7 params
+    rx, ry, rx ry x-axis-rotation large-arc-flag sweep-flag x y
+
+
+
+    
